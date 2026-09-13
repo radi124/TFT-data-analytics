@@ -39,3 +39,41 @@ The project follows an end-to-end data workflow:
 4. The prepared data was loaded into **Power BI**, where additional transformations and data modeling were performed.
 5. **DAX measures** were created to calculate analytical metrics such as Average Placement, Top 4 Rate and Games Played.
 6. The final results were presented in an interactive **Power BI dashboard**.
+
+## Data Collection & Database
+
+Match and Challenger data was collected from the Riot Games API using Python and stored in a MySQL database.
+
+The main tables used in the project were:
+
+- `tft_challenger_euw` – Challenger player data
+- `tft_matchlist_euw` – match IDs assigned to collected players
+- `tft_match_participants_euw` – participant-level match statistics
+- `tft_match_traits_euw` – traits used by individual players in each match
+
+The database was designed to keep match, player and trait data separate, while allowing them to be joined using `match_id` and `puuid`.
+
+## SQL Analysis & Data Preparation
+
+SQL was used to explore the collected data, calculate analytical metrics and prepare datasets for Power BI.
+
+The analysis included:
+
+- calculating dashboard KPIs,
+- player-level performance analysis,
+- Top 4 and win rate calculations using `CASE WHEN`,
+- filtering players by minimum number of matches using `HAVING`,
+- comparing Challenger and non-Challenger players,
+- lobby-level analysis using joins and aggregations,
+- data quality checks,
+- creation of analytical SQL views used later in Power BI.
+
+Several views were created to simplify the reporting layer:
+
+- `vw_tft_participants_enriched`
+- `vw_tft_match_summary`
+- `vw_tft_player_traits_enriched`
+- `vw_traits_analysis`
+
+The SQL scripts used in the project are available in the `sql/` directory.
+
