@@ -77,3 +77,37 @@ Several views were created to simplify the reporting layer:
 
 The SQL scripts used in the project are available in the `sql/` directory.
 
+## Power BI Dashboard
+
+The final Power BI report consists of three analytical pages designed to explore the dataset from different perspectives.
+
+### 1. Match Overview
+
+The first page provides a high-level overview of the collected TFT match data.
+
+It includes key metrics such as the number of analyzed games, player records, unique players, average placement, average game length, average player level and average damage dealt to other players.
+
+The visualizations also show how player level and damage change depending on final placement, as well as the distribution of game duration.
+
+![Match Overview](images/01_overview.png)
+
+### 2. Challenger & Lobby Analysis
+
+The second page focuses on Challenger players and lobby strength.
+
+It compares individual Challenger performance using metrics such as games played, average placement and Top 4 rate. The dashboard also analyzes how the number of Challenger players in a lobby relates to their average placement and compares Challenger performance with non-Challenger players.
+
+Additional visualizations show the distribution of Challenger placements and the number of matches grouped by Challenger presence in the lobby.
+
+![Challenger and Lobby Analysis](images/02_lobby_analysis.png)
+
+### 3. Trait & Synergy Analysis
+
+The third page focuses on TFT traits and their effectiveness.
+
+An interactive trait selector allows individual traits to be analyzed using metrics such as games played, win rate, Top 4 performance and average placement.
+
+The page also shows how the number of units activating a trait relates to average placement and includes a performance map for comparing traits based on Top 4 rate and win rate.
+
+![Trait and Synergy Analysis](images/03_traits_analysis.png)
+
