@@ -2,7 +2,7 @@
 -- Teamfight Tactics Analytics
 -- Player & Challenger Analysis
 -- =========================================================
--- Queries used to compare player performance and analyze
+-- Queries used to compare player performance and analyze.
 -- Challenger players across the collected TFT matches.
 -- =========================================================
 
