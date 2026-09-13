@@ -111,3 +111,17 @@ The page also shows how the number of units activating a trait relates to averag
 
 ![Trait and Synergy Analysis](images/03_traits_analysis.png)
 
+## DAX Measures
+
+DAX measures were used to calculate dynamic metrics that respond to filters and slicers in the Power BI report.
+
+Examples include:
+
+- **Top 4 Rate** – percentage of player results finishing in positions 1–4
+- **Average Placement Challenger** – average placement calculated only for Challenger players
+- **Average Game Length** – conversion of raw game duration into a readable value in minutes
+
+The measures demonstrate the use of filtering context, `CALCULATE`, `DIVIDE`, `COUNTROWS` and aggregation functions in Power BI.
+
+Selected DAX measures are available in the `dax/` directory.
+
