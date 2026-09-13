@@ -1,0 +1,48 @@
+// =========================================================
+// Teamfight Tactics Analytics
+// Power BI DAX Measures
+// =========================================================
+
+
+// ---------------------------------------------------------
+// Top 4 Rate
+// Percentage of participant records ending in positions 1-4.
+// ---------------------------------------------------------
+
+Top4 Rate =
+DIVIDE(
+    CALCULATE(
+        COUNTROWS('tft_project tft_match_participants_euw'),
+        'tft_project tft_match_participants_euw'[placement] <= 4
+    ),
+    COUNTROWS('tft_project tft_match_participants_euw')
+)
+
+
+// ---------------------------------------------------------
+// Average Placement - Challenger Players
+// Calculates average placement only for players identified
+// as Challengers.
+// ---------------------------------------------------------
+
+Average Placement Challenger =
+CALCULATE(
+    [Average Placement],
+    'tft_project tft_match_participants_euw'[Is Challenger] = 1
+)
+
+
+// ---------------------------------------------------------
+// Average Game Length
+// Converts average game duration from seconds to minutes
+// and displays it as a readable value.
+// ---------------------------------------------------------
+
+Average Game Length =
+FORMAT(
+    DIVIDE(
+        AVERAGE('tft_project tft_match_participants_euw'[game_length]),
+        60
+    ),
+    "0.0"
+) & " min"
