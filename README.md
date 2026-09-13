@@ -162,3 +162,22 @@ The analysis suggests that successful TFT performance is associated with stronge
 
 The trait analysis also shows that popularity alone is not a sufficient indicator of effectiveness. Combining usage, Top 4 rate, win rate and average placement provides a more complete view of trait performance than relying on a single metric.
 
+## Repository Structure
+
+```text
+TFT-data-analytics/
+├── dax/
+│   └── measures.dax
+├── images/
+│   ├── 01_overview.png
+│   ├── 02_lobby_analysis.png
+│   └── 03_traits_analysis.png
+├── powerbi/
+│   └── tft_project.pbix
+├── sql/
+│   ├── 01_database_schema.sql
+│   ├── 02_overview_analysis.sql
+│   ├── 03_player_analysis.sql
+│   └── 04_analytical_views.sql
+└── README.md
+```
