@@ -1,6 +1,6 @@
 -- =========================================================
 -- Teamfight Tactics Analytics
--- Overview Analysis
+-- Overview Analysis and general performance metrics
 -- =========================================================
 -- Queries used to calculate the main overview metrics
 -- and support the first Power BI dashboard page.
