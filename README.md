@@ -125,3 +125,40 @@ The measures demonstrate the use of filtering context, `CALCULATE`, `DIVIDE`, `C
 
 Selected DAX measures are available in the `dax/` directory.
 
+## Key Insights
+
+The dashboard provides several insights into player performance, lobby strength and trait effectiveness.
+
+### Match & Player Performance
+
+- The dataset contains **197 matches and 1,576 participant records**, representing **628 unique players**.
+- The overall average placement is **4.50**, which is consistent with the expected midpoint of an eight-player TFT lobby.
+- Player performance shows a clear relationship with both **level and damage dealt**. Players finishing in higher positions generally reached higher levels and dealt significantly more damage to other players.
+- First-place players dealt the highest average damage, while average damage gradually decreased toward lower placements.
+- A similar pattern can be observed for player level: players finishing near the top of the lobby generally reached higher levels than players eliminated earlier.
+- The average analyzed match lasted approximately **35.4 minutes**, with most matches concentrated around the middle of the observed game-length distribution.
+
+### Challenger & Lobby Analysis
+
+- Challenger players achieved an average placement of approximately **3.70**, indicating stronger-than-average performance within the analyzed matches.
+- Individual Challenger performance varied considerably. Some players achieved average placements below 3.0 and Top 4 rates above 80%, while others performed much closer to the overall lobby average.
+- Most analyzed matches contained between **2 and 4 Challenger players**, with approximately three Challengers appearing in a lobby on average.
+- Challenger players generally maintained better average placements than non-Challenger players across different lobby-strength levels.
+- The difference between Challenger and non-Challenger performance was particularly visible in lobbies containing fewer Challenger players.
+- As the number of Challenger players in a lobby increased, their average placement moved closer to the middle of the ranking. This suggests that stronger competition between high-ranked players may reduce the advantage of an individual Challenger player.
+
+### Trait & Synergy Analysis
+
+- Trait effectiveness varied considerably across the analyzed dataset, showing that frequently played traits were not necessarily the most successful ones.
+- The interactive trait selector allows each trait to be evaluated independently using **games played, win rate, Top 4 rate and average placement**.
+- The number of units activating a trait was also associated with different placement outcomes, allowing different activation levels to be compared.
+- The **Meta Performance Map** combines Top 4 rate and win rate, making it possible to identify traits that performed above or below the general population.
+- A baseline win rate of **12.5%** was used as a natural reference point because each TFT lobby contains eight players and only one player can finish first.
+- Traits with both a high Top 4 rate and a high win rate can be considered stronger-performing options in the analyzed sample, while traits with high usage but weaker results may indicate popularity without equivalent effectiveness.
+
+### Overall Conclusion
+
+The analysis suggests that successful TFT performance is associated with stronger in-game development, particularly higher player levels and greater damage dealt. Challenger players generally outperform the wider player population, although their advantage becomes smaller in stronger lobbies containing more high-ranked players.
+
+The trait analysis also shows that popularity alone is not a sufficient indicator of effectiveness. Combining usage, Top 4 rate, win rate and average placement provides a more complete view of trait performance than relying on a single metric.
+
